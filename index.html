@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='pl'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Mateusz Kozak - Ciąg Fibonacciego</title>
+</head>
+
+<body>
+
+    <h3>Mateusz Kozak - Ciąg Fibonacciego</h3>
+
+    <form id='form'>
+        <label for='num'>Wprowadź dowolną liczbę dodatnią:</label>
+        <br />
+        <input type='number' id='num' name='num' min='0' />
+        <br />
+        <input type='submit' value='Oblicz' />
+    </form>
+
+    <p id='log'></p>
+
+</body>
+
+<script>
+
+    const form = document.getElementById('form');
+    const log = document.getElementById('log');
+
+    function logSubmit(event) {
+        event.preventDefault();
+
+        const num = document.getElementById('num').value;
+
+        if (num == null || num == "" || num < 0) {
+            log.textContent = 'Wprowadź dowolną liczbę dodatnią';
+            return;
+        }
+
+        const fib = fibonacci(num);
+
+        log.textContent = `Fib(${num}) = ${fib}`;
+    }
+
+    function fibonacci(n) {
+        return n < 1 ? 0 : n <= 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    form.addEventListener('submit', logSubmit);
+
+</script>
+
+</html>
