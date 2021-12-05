@@ -12,6 +12,9 @@ GitHub:
 << git clone https://github.com/MatiMatik97/fib >> - Pobranie wcześniej utworzonego repozytorium na dysk
 << cd fib >> - przejście do folderu
 << git pull >> - upewnienie się, że mamy najnowszą wersję repozytorium
+<< git config --global user.name "nazwa uzytkownika" >> - ustawienie nazwy użytkownika
+<< git config --global user.email "adres email" >> - ustawienie adresu e-mail
+<< git remote set-url origin https://MatiMatik97:TOKEN@github.com/MatiMatik97/fib.git >> - ustawienie tokenu dostępu
 << git add . >> - dodanie zmienionych plików
 << git commit -m "opis zmian" >> - zatwierdzenie wprowadzonych zmian
 << git push origin master >> - wysłanie zmian do repozytorium
