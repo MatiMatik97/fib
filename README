@@ -10,7 +10,7 @@ Polecenia wykorzystane do realizacji zadania:
 
 GitHub:
 << git clone https://github.com/MatiMatik97/fib >> - Pobranie wcześniej utworzonego repozytorium na dysk
-<< git cd fib >> - przejście do folderu
+<< cd fib >> - przejście do folderu
 << git pull >> - upewnienie się, że mamy najnowszą wersję repozytorium
 << git add . >> - dodanie zmienionych plików
 << git commit -m "opis zmian" >> - zatwierdzenie wprowadzonych zmian
@@ -18,4 +18,4 @@ GitHub:
 
 Docker:
 << docker build -t nazwa_obrazu . >> - zbudowanie obrazu
-<< docker run --name nazwa_kontenera  -p 8080:80 nazwa_obrazu >> - uruchomienie kontenera na podanym porcie
+<< docker run --name nazwa_kontenera -p 8080:80 nazwa_obrazu >> - uruchomienie kontenera na podanym porcie
